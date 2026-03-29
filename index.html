@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomeFix Appliance Repair</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container navbar">
+      <a href="#home" class="brand" aria-label="HomeFix Appliance Repair">
+        <span class="brand-badge">HF</span>
+        <span>HomeFix Appliance Repair</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation">Menu</button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#booking">Book Now</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#booking" class="nav-cta">Schedule Repair</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Same-day appliance repair across the U.S.</div>
+          <h1>Fast, reliable appliance repair for busy American homes.</h1>
+          <p>
+            We repair refrigerators, washers, dryers, dishwashers, ovens and more.
+            Book a technician in minutes and get transparent service from licensed professionals.
+          </p>
+          <div class="hero-actions">
+            <a href="#booking" class="hero-cta">Book a Service</a>
+            <a href="#services" class="hero-secondary">View Services</a>
+          </div>
+          <div class="hero-highlights">
+            <span>Licensed technicians</span>
+            <span>Transparent pricing</span>
+            <span>Emergency support</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Popular repairs">
+          <h3>Most requested repairs this week</h3>
+          <ul class="repair-list">
+            <li>
+              <span class="icon">🧊</span>
+              <div class="repair-meta">
+                <strong>Refrigerator Repair</strong>
+                <small>Cooling issues, leaks, noisy compressors</small>
+              </div>
+            </li>
+            <li>
+              <span class="icon">🧺</span>
+              <div class="repair-meta">
+                <strong>Washer & Dryer Repair</strong>
+                <small>Drainage problems, spin failures, overheating</small>
+              </div>
+            </li>
+            <li>
+              <span class="icon">🍽️</span>
+              <div class="repair-meta">
+                <strong>Dishwasher Repair</strong>
+                <small>Water pressure, door latch, poor cleaning</small>
+              </div>
+            </li>
+          </ul>
+          <div class="hero-note">Call today and get a booking window within 24 hours in most service areas.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section-title">Our Appliance Repair Services</h2>
+        <p class="section-subtitle">
+          We diagnose and repair major household appliances with speed, clear communication, and dependable workmanship.
+        </p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🧊</div>
+            <h3>Refrigerator Repair</h3>
+            <p>We fix cooling issues, temperature instability, leaks, faulty ice makers, and compressor problems.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🧺</div>
+            <h3>Washing Machine Repair</h3>
+            <p>From drainage failures to drum problems and spin cycle issues, we restore washers quickly.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🍽️</div>
+            <h3>Dishwasher Repair</h3>
+            <p>We handle leaks, clogged filters, broken pumps, and poor wash performance for all major brands.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🔥</div>
+            <h3>Oven & Stove Repair</h3>
+            <p>We repair burners, heating elements, igniters, control boards, and uneven cooking performance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container booking-wrap">
+        <div class="booking-info">
+          <h3>Why customers choose HomeFix</h3>
+          <p>
+            We help homeowners across the U.S. get their appliances working again without hidden fees or long delays.
+          </p>
+          <ul class="booking-points">
+            <li>
+              <strong>Fast scheduling</strong>
+              Book online in under a minute and get a quick callback from our team.
+            </li>
+            <li>
+              <strong>Clear communication</strong>
+              We keep customers informed before arrival, during diagnostics, and after repair.
+            </li>
+            <li>
+              <strong>Trusted service</strong>
+              Our technicians work with major appliance brands and common household systems.
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-card" id="booking">
+          <h3>Book a Repair Appointment</h3>
+          <p>Tell us what is happening with your appliance and our team will contact you shortly.</p>
+
+          <form class="form" id="bookingForm" novalidate>
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" placeholder="John Miller" />
+              <div class="error-message" id="nameError"></div>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" />
+              <div class="error-message" id="phoneError"></div>
+            </div>
+
+            <div class="field">
+              <label for="problem">Describe the Problem</label>
+              <textarea id="problem" name="problem" placeholder="My refrigerator is not cooling and makes a loud clicking sound."></textarea>
+              <div class="error-message" id="problemError"></div>
+            </div>
+
+            <button type="submit">Submit Request</button>
+            <div class="success-message" id="successMessage">Thanks! Your request has been sent successfully.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">HomeFix Appliance Repair</div>
+      <div class="footer-info">
+        <span>📞 (800) 555-0199</span>
+        <span>✉️ service@homefixrepair.com</span>
+        <span>📍 Austin, TX, USA</span>
+      </div>
+      <div class="footer-info">
+        <span>© 2026 HomeFix. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('bookingForm');
+    const nameInput = document.getElementById('name');
+    const phoneInput = document.getElementById('phone');
+    const problemInput = document.getElementById('problem');
+    const successMessage = document.getElementById('successMessage');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    const fields = {
+      name: {
+        input: nameInput,
+        error: document.getElementById('nameError'),
+        validate: (value) => value.trim().length >= 2,
+        message: 'Please enter your full name.'
+      },
+      phone: {
+        input: phoneInput,
+        error: document.getElementById('phoneError'),
+        validate: (value) => /^[+()\-\s\d]{10,}$/.test(value.trim()),
+        message: 'Please enter a valid phone number.'
+      },
+      problem: {
+        input: problemInput,
+        error: document.getElementById('problemError'),
+        validate: (value) => value.trim().length >= 10,
+        message: 'Please describe the problem in at least 10 characters.'
+      }
+    };
+
+    function setError(fieldKey, isValid) {
+      const field = fields[fieldKey];
+      if (isValid) {
+        field.input.classList.remove('invalid');
+        field.error.textContent = '';
+      } else {
+        field.input.classList.add('invalid');
+        field.error.textContent = field.message;
+      }
+    }
+
+    function validateForm() {
+      let isFormValid = true;
+
+      Object.keys(fields).forEach((key) => {
+        const currentValue = fields[key].input.value;
+        const isFieldValid = fields[key].validate(currentValue);
+        setError(key, isFieldValid);
+        if (!isFieldValid) {
+          isFormValid = false;
+        }
+      });
+
+      return isFormValid;
+    }
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      successMessage.style.display = 'none';
+
+      const isValid = validateForm();
+      if (!isValid) return;
+
+      form.reset();
+      successMessage.style.display = 'block';
+    });
+
+    Object.keys(fields).forEach((key) => {
+      fields[key].input.addEventListener('input', () => {
+        const isValid = fields[key].validate(fields[key].input.value);
+        setError(key, isValid);
+      });
+    });
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
